@@ -1,0 +1,20 @@
+package-as: Pini_GoldStats
+enable-nolib-creation: no
+
+externals:
+
+move-folders:
+
+ignore: # Files and directories beginning with a dot (such as .git) are automatically ignored, as is the pgkmeta file itself.
+    - Images
+    - README.md
+
+required-dependencies:
+
+optional-dependencies:
+
+manual-changelog: #CHANGELOG.txt
+
+license-output:
+
+tools-used:
