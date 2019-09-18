@@ -1,0 +1,10 @@
+﻿## Interface: 80200
+## Title: Pini - Gold Stats
+## Notes: Track how much gold you have been earning per hour. Command usage /pgs help or /pini_goldstats help for more info.
+## Author: PiniponSelvagem
+## Version: 1.0
+## DefaultState: enabled
+## Twitter: twitter.com/PiniponSelvagem
+## GitHub: github.com/PiniponSelvagem
+
+Pini_GoldStats.lua
