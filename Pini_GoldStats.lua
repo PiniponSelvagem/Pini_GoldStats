@@ -74,7 +74,6 @@ local pgs_frame = CreateFrame("Frame");
 pgs_frame:RegisterEvent("ADDON_LOADED");
 pgs_frame:RegisterEvent("PLAYER_LOGIN");
 pgs_frame:RegisterEvent("PLAYER_MONEY");
-pgs_frame:RegisterEvent("PLAYER_MONEY");
 pgs_frame:RegisterEvent("PLAYER_ENTERING_WORLD");
 
 pgs_frame:SetScript("OnEvent",
