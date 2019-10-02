@@ -1,6 +1,6 @@
 ﻿-- Author      : PiniponSelvagem
 -- Create Date : 2019/06/30
--- Updated     : 2019/06/30
+-- Updated     : 2019/10/02
 -- Based of    : xp_timer by jjacob (Jeff Jacob)
 
 -- ENABLE lua debug errors: /console scriptErrors 1
@@ -49,7 +49,7 @@ local strings = {
         colors.YELLOW .. "Pini GoldStats usage:|r",
         colors.YELLOW .. " /pgs|r -- Get information about gold earned",
         colors.YELLOW .. " /pgs help|r -- this help",
-        colors.YELLOW .. " /pgs hour|r -- gold earned last hour",
+        --colors.YELLOW .. " /pgs hour|r -- gold earned last hour",
         colors.YELLOW .. " /pgs instance|r -- last instance run gold stats",
         colors.YELLOW .. " /pgs reset|r -- reset your gold stats",
     },
@@ -182,8 +182,8 @@ function pgs:help(msg)
     end
 end
 
+--[[
 function pgs:hour()
-    --[[
     local time_diff = GetTime() - self.start_time;
     if time_diff >= (3600) then
         local xp_per_hour = (self.xp_gained / time_diff) * 3600;
@@ -192,8 +192,8 @@ function pgs:hour()
         DEFAULT_CHAT_FRAME:AddMessage("You have not been logged in without a reset for an hour");
         DEFAULT_CHAT_FRAME:AddMessage("Time Logged IN: "..xp_util.to_hms_string(time_diff));
     end
-    ]]
 end --TODO
+]]
 
 function pgs:PLAYER_MONEY(...)
     --[[
