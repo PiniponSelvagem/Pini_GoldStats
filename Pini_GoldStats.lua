@@ -1,6 +1,4 @@
 ﻿-- Author      : PiniponSelvagem
--- Create Date : 2019/06/30
--- Updated     : 2020/06/23
 -- Based of    : xp_timer by jjacob (Jeff Jacob)
 
 -- ENABLE lua debug errors: /console scriptErrors 1
