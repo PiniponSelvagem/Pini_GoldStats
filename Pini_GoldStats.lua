@@ -364,10 +364,14 @@ end
 function PiniGS:session()
     local _time  = getSessionTime()
     local _money = getSessionMoney()
+    local _moneyPerHour = moneyPerHour(_money, _time)
+
+    _time = hmsToString(_time)
+
     return {
         time  = _time,
         money = _money,
-        moneyPerHour = moneyPerHour(_money, _time)
+        moneyPerHour = _moneyPerHour
     }
 end
 
@@ -381,7 +385,7 @@ function PiniGS:instance()
         _money = getInstanceMoney()
     end
 
-    _moneyPerHour = moneyPerHour(_money, _time)
+    local _moneyPerHour = moneyPerHour(_money, _time)
     _time = hmsToString(_time)
 
     return {

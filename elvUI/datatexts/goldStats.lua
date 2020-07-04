@@ -25,6 +25,7 @@ if (IsAddOnLoaded("ElvUI")) then
         NAME         = "Name:",
         DIFFICULTY   = "Difficulty:",
         RUN_TIME     = "Run time:",
+        TIME         = "Time:",
         
         SESSION  = "Session:",
         INSTANCE = "Instance:",
@@ -63,6 +64,7 @@ if (IsAddOnLoaded("ElvUI")) then
 
         --[[ ---- SESSION ---- ]]
         DT.tooltip:AddLine(L[text.SESSION])
+        DT.tooltip:AddDoubleLine(L[text.TIME], session.time, 1, 1, 1, 1, 1, 1)
 
         if session.money >= 0 then
             DT.tooltip:AddDoubleLine(L[text.EARNED], E:FormatMoney(session.money, style, textOnly), 1, 1, 1, 1, 1, 1)
@@ -96,10 +98,10 @@ if (IsAddOnLoaded("ElvUI")) then
         else
             DT.tooltip:AddDoubleLine(L[text.DEFICIT], E:FormatMoney(instance.money, style, textOnly), 1, 0, 0, 1, 1, 1)
         end
-
+        
         if instance.moneyPerHour > 0 then
             DT.tooltip:AddDoubleLine(L[text.PER_HOUR], E:FormatMoney(instance.moneyPerHour, style, textOnly), 0, 1, 0, 1, 1, 1)
-        elseif session.moneyPerHour < 0 then
+        elseif instance.moneyPerHour < 0 then
             DT.tooltip:AddDoubleLine(L[text.PER_HOUR], "- " .. E:FormatMoney(instance.moneyPerHour, style, textOnly), 1, 0, 0, 1, 1, 1)
         else
             DT.tooltip:AddDoubleLine(L[text.PER_HOUR], E:FormatMoney(instance.moneyPerHour, style, textOnly), 1, 1, 1, 1, 1, 1)
