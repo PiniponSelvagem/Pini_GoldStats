@@ -4,7 +4,7 @@
 ## Author: PiniponSelvagem
 ## Twitter: twitter.com/PiniponSelvagem
 ## GitHub: github.com/PiniponSelvagem
-## Version: 1.1.3
+## Version: 1.1.4
 ## DefaultState: enabled
 ## OptionalDeps: ElvUI
 
