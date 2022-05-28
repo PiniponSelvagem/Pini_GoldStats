@@ -107,7 +107,7 @@ if (IsAddOnLoaded("ElvUI")) then
             DT.tooltip:AddDoubleLine(L[text.PER_HOUR], E:FormatMoney(instance.moneyPerHour, style, textOnly), 1, 1, 1, 1, 1, 1)
         end
 
-        DT.tooltip:AddLine(" ")
+        --DT.tooltip:AddLine(" ")
         DT.tooltip:Show()
     end
 
@@ -140,6 +140,7 @@ if (IsAddOnLoaded("ElvUI")) then
         DT:RegisterDatatext(name, events, eventFunc, updateFunc, clickFunc, onEnterFunc, onLeaveFunc)
 
         name - name of the datatext (required)
+        ??? - ??? (need to update this description)
         events - must be a table with string values of event names to register
         eventFunc - function that gets fired when an event gets triggered
         updateFunc - onUpdate script target function

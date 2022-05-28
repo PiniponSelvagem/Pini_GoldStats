@@ -8,5 +8,7 @@
 ## DefaultState: enabled
 ## OptionalDeps: ElvUI
 
+## X-Curse-Project-ID: 342120
+
 Pini_GoldStats.lua
 elvUI\datatexts\load_datatexts.xml
