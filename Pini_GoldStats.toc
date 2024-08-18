@@ -1,10 +1,10 @@
-﻿## Interface: 100000
+﻿## Interface: 110000
 ## Title: Pini - Gold Stats
 ## Notes: Track how much gold you have been earning per hour. Command usage /pgs help or /pini_goldstats help for more info.
 ## Author: PiniponSelvagem
 ## Twitter: twitter.com/PiniponSelvagem
 ## GitHub: github.com/PiniponSelvagem
-## Version: 1.1.5
+## Version: 1.1.6
 ## DefaultState: enabled
 ## OptionalDeps: ElvUI
 

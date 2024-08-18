@@ -1,6 +1,6 @@
-if (IsAddOnLoaded("ElvUI")) then
+if (C_AddOns.IsAddOnLoaded("ElvUI")) then
 
-    local E, L, V, P, G = unpack(ElvUI); --Inport: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
+    local E, L, V, P, G = unpack(ElvUI); --Import: Engine, Locales, PrivateDB, ProfileDB, GlobalDB
     local DT = E:GetModule('DataTexts')
     local format = format
 
